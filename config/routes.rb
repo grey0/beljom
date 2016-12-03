@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'product/create'
+
+  get 'product/new'
+
+  get 'product/index'
+
   get 'seller/create'
 
   get 'seller/new'
