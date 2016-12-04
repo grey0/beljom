@@ -1,21 +1,18 @@
 Rails.application.routes.draw do
-  get 'category/create'
+  resources :categories
+  resource :category
 
-  get 'category/new'
+  get 'products/create'
 
-  get 'category/index'
+  get 'products/new'
 
-  get 'product/create'
+  get 'products/index'
 
-  get 'product/new'
+  get 'sellers/create'
 
-  get 'product/index'
+  get 'sellers/new'
 
-  get 'seller/create'
-
-  get 'seller/new'
-
-  get 'seller/index'
+  get 'sellers/index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

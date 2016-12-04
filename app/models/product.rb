@@ -3,7 +3,9 @@ class Product
   field :name, type: String
   field :description, type: String
   field :rating, type: String
-  field :reviews, type: String
+  field :category_id, type: Integer
+
+  embeds_many :reviews
 
   validates :name, :description, presence: true
 end
