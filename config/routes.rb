@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
   resources :categories
-  resource :category
-
-  get 'products/create'
-
-  get 'products/new'
-
-  get 'products/index'
+  resources :products
 
   get 'sellers/create'
 
