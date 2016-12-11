@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Seller, type: :model do
   it "is valid with name, phone number and email" do
-    seller = Seller.new(name: "John Doe", phone_number: "025-500500", email: "johndoe@beljom.sl")
+    seller = Seller.new(name: "John Doe", phone_number: "025-500500", email: "johndoe@beljom.sl", password: "foobar", password_confirmation: "foobar")
     expect(seller.valid?).to eq(true)
   end
   it "is invalid without name" do
