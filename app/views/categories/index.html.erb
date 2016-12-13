@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
+<%	if logged_id? %>
+    <%=	 link_to 'Log Out', login_path, method: :delete%>
+    <%	 else %>
+    <%=	 link_to 'Log In', login_path %>
+    <%	 end %>
+<%=	 link_to 'Seller sign up', signup_path %>
 
 <h1>Categories</h1>
 
@@ -15,14 +21,9 @@
       <tr>
         <td><%= image_tag category.name %></td>
         <td><%= link_to category.name, category %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Category', new_category_path %>

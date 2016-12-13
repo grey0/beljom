@@ -1,2 +1,34 @@
 <h1>Seller#new</h1>
-<p>Find me in app/views/seller/new.html.erb</p>
+<%= form_for(@seller) do |f| %>
+    <% if @seller.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@seller.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+          <ul>
+            <% @seller.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <%=	 f.label :name %>
+    <%=	 f.text_field :name %>
+
+    <%=	 f.label :email %>
+    <%=	 f.email_field :email %>
+
+    <%=	 f.label :phone_number %>
+    <%=	 f.phone_field :phone_number %>
+
+    <%=	 f.label :whatsapp %>
+    <%=	 f.check_box :phone_number %>
+
+    <%=	 f.label :password %>
+    <%=	 f.password_field :password %>
+    
+    <%=	 f.label :password_confirmation %>
+    <%=	 f.password_field :password_confirmation %>
+    
+    <%= f.submit %>
+<% end %>
