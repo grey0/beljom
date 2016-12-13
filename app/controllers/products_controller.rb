@@ -9,6 +9,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def update
+    @product = Product.update(product_param)
+
+    if @product
+      redirect_to seller_path(session[:seller_id]), notice: "Item was successfully update"
+    else
+      render :new
+    end
+  end
+
   def new
     @product = Product.new()
     # @categories_arry = Category.all.map{|e| [e.name, e.id]}
@@ -20,6 +30,17 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(id: params[:id])
+  end
+
+  def edit
+    @product = Product.find(id: params[:id])
+  end
+
+
+  def destroy
+    @product = Product.find(id: params[:id])
+    @product.destroy
+    redirect_to seller_path(session[:seller_id]), notice: "Successfully delete item"
   end
 
   def product_param
