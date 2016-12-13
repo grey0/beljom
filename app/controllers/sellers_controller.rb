@@ -16,6 +16,11 @@ class SellersController < ApplicationController
   def index
   end
 
+  def show
+    @seller = Seller.find(params[:id])
+    @products = Product.where(seller_id: @seller.id)
+  end
+
 
   def seller_param
     params.require(:seller).permit(:name, :email, :phone_number, :password, :password_confirmation)

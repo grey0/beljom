@@ -2,26 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a74179f2-3e61-4cc8-934b-4a94fb909fad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/session.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/session.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/helpers/sessions_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/sessions/create.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/sessions/delete.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/sessions/new.html.erb_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sellers/show.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/products/create.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/data/db/WiredTiger.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/collection-7--7786263400701756095.wt" afterPath="$PROJECT_DIR$/data/db/collection-7--7786263400701756095.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/index-8--7786263400701756095.wt" afterPath="$PROJECT_DIR$/data/db/index-8--7786263400701756095.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/data/db/sizeStorer.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cee5cc71-db2d-4223-b065-94ef4444ec0f.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/d4c15225-acab-48fb-8763-eef6c8c1cd02.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sellers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sellers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/seller.rb" afterPath="$PROJECT_DIR$/app/models/seller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sellers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sellers/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/new.html.erb" afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/categories_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/categories_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/data/db/WiredTiger.turtle" />
     </list>
     <ignored path="beljom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +37,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/beljom@IRB_console__beljom.coverage" NAME="IRB console: beljom Coverage Results" MODIFIED="1481417778637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
     <SUITE FILE_PATH="coverage/beljom@routes__beljom.coverage" NAME="routes: beljom Coverage Results" MODIFIED="1481419576744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
-    <SUITE FILE_PATH="coverage/beljom@Development__beljom.coverage" NAME="Development: beljom Coverage Results" MODIFIED="1481588185588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
-    <SUITE FILE_PATH="coverage/beljom@Rails_console__beljom.coverage" NAME="Rails console: beljom Coverage Results" MODIFIED="1481430663674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
+    <SUITE FILE_PATH="coverage/beljom@Development__beljom.coverage" NAME="Development: beljom Coverage Results" MODIFIED="1481591123376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
+    <SUITE FILE_PATH="coverage/beljom@Rails_console__beljom.coverage" NAME="Rails console: beljom Coverage Results" MODIFIED="1481591639650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="beljom" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -48,51 +49,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="seller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/seller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <file leaf-file-name="sellers_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sellers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="48" lean-forward="true" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+            <state relative-caret-position="360">
+              <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sessions_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+      <file leaf-file-name="products_controller.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="categories_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="30">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -101,54 +92,71 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sellers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sellers/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commands.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0@global/gems/railties-5.0.0.1/lib/rails/commands.rb">
+      <file leaf-file-name="product.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Erb File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,17 +171,13 @@
         <option value="$PROJECT_DIR$/app/views/category/create.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/category_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/category_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/products/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/models/category.rb" />
         <option value="$PROJECT_DIR$/spec/models/seller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/seller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sellers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sellers/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
@@ -181,9 +185,15 @@
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/categories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/seller.rb" />
+        <option value="$PROJECT_DIR$/app/models/product.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sellers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sellers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/products/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/products_controller.rb" />
       </list>
     </option>
   </component>
@@ -226,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -520,7 +531,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,6 +540,11 @@
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v5.5.0/bin/node" />
     <property name="js.eslint.eslintPackage" value="$USER_HOME$/.nvm/versions/node/v5.5.0/lib/node_modules/eslint" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/sellers" />
+    </key>
   </component>
   <component name="RunManager" selected="IRB console.Rails console: beljom">
     <configuration default="false" name="Rails console: beljom" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -811,8 +826,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: beljom" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.routes: beljom" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console: beljom" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console: beljom" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.routes: beljom" />
       </list>
     </recent_temporary>
   </component>
@@ -837,19 +852,19 @@
       <workItem from="1481349899044" duration="234000" />
       <workItem from="1481350137546" duration="889000" />
       <workItem from="1481351093602" duration="16164000" />
+      <workItem from="1481590648629" duration="3625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33332000" />
+    <option name="totallyTimeSpent" value="36957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1022" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1996337" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2014652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -860,6 +875,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -916,14 +932,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -936,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1055,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="15">
             <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1063,27 +1068,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,14 +1083,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb" />
     <entry file="file://$PROJECT_DIR$/spec/models/product_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1143,14 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/seller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1171,15 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,15 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sellers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1203,25 +1158,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sellers/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1481430739000" expanded="true" signature="120:404" ph="..." />
-            <marker date="1481430739000" expanded="true" signature="246:389" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.0@global/gems/railties-5.0.0.1/lib/rails/commands.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1237,7 +1180,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1245,7 +1188,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1253,14 +1196,14 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="48" lean-forward="true" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <caret line="0" column="48" lean-forward="false" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
+        <state relative-caret-position="540">
           <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding />
         </state>
@@ -1276,24 +1219,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/seller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sellers/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sellers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sellers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
