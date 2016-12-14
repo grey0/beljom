@@ -20,7 +20,7 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-        <td><%= image_tag category.name %></td>
+        <td><%= image_tag category.name.downcase %></td>
         <td><%= link_to category.name, category %></td>
       </tr>
     <% end %>
