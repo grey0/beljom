@@ -4,6 +4,10 @@ module SessionsHelper
     session[:seller_id] = seller.id
   end
 
+  def log_in_admin(admin)
+    session[:admin_id] = admin.id
+  end
+
   def current_seller
     @current_seller ||= Seller.find_by(id: session[:sellers_id])
   end
