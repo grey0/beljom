@@ -1,0 +1,10 @@
+<h1>Admins#dashboard</h1>
+<%= link_to "Log Out", logout_admin_path, method: :delete %>
+<table>
+  <%	 @products.each do |product| %>
+    <tr>
+      <td><%= link_to product.name, edit_product_path(product, admin: true) %></td>
+      <td><%= link_to "Approve", product_approve_path(product_id: product.id, admin_id: session[:admin_id]) %></td>
+    </tr>
+  <%	 end %>
+</table>

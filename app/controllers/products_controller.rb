@@ -10,9 +10,11 @@ class ProductsController < ApplicationController
   end
 
   def update
-    @product = Product.update(product_param)
-
-    if @product
+    @product = Product.find(params[:id])
+    @product.update(product_param)
+    if @product && params[:admin] == 'true'
+      redirect_to admins_dashboard_path
+    elsif @product
       redirect_to seller_path(session[:seller_id]), notice: "Item was successfully update"
     else
       render :new
@@ -33,7 +35,14 @@ class ProductsController < ApplicationController
   end
 
   def edit
+    @admin = params[:admin]
     @product = Product.find(id: params[:id])
+  end
+
+  def approve
+    product = Product.find(id: params[:product_id])
+    product.update(approved: true, approved_by: session[:admin_id])
+    redirect_to admins_dashboard_path
   end
 
 

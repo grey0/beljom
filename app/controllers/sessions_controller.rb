@@ -3,6 +3,10 @@ class SessionsController < ApplicationController
     @seller = Seller.new
   end
 
+  def new_admin
+    @seller = Seller.new
+  end
+
   def create
     seller = Seller.find_by(email: params[:session][:email])
     if seller && seller.authenticate(params[:session][:password])
@@ -20,15 +24,20 @@ class SessionsController < ApplicationController
     if admin && admin.authenticate(params[:session][:password])
       flash[:notice] = "Successful"
       log_in_admin admin
-      redirect_to categories_path
+      redirect_to admins_dashboard_path
     else
       flash.now[:danger] = 'Invalid email/password combination'
-      render 'new'
+      render 'new_admin'
     end
   end
 
   def destroy
     log_out
+    redirect_to root_path
+  end
+
+  def destroy_admin
+    log_out_admin
     redirect_to root_path
   end
 end
