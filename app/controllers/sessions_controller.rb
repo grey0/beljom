@@ -12,6 +12,8 @@ class SessionsController < ApplicationController
     if seller && seller.authenticate(params[:session][:password])
       flash[:notice] = "Successful"
       log_in seller
+      params[:session][:remember_me] == '1' ? remember(seller) : forget(seller)
+      remember seller
       redirect_to categories_path
     else
       flash.now[:danger] = 'Invalid email/password combination'
@@ -32,7 +34,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_path
   end
 
