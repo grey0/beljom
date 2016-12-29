@@ -5,6 +5,16 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'simplecov'
+require 'capybara/rails'
+require 'capybara/rspec'
+
+
+if ENV['RAILS_ENV'] == 'test'
+  require 'simplecov'
+  SimpleCov.start 'rails'
+  puts "required simplecov"
+end
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -46,6 +56,9 @@ RSpec.configure do |config|
   #       # ...
   #     end
   #
+  config.expect_with :rspec do |c|
+    c.syntax = [:should, :expect]
+  end
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
@@ -54,4 +67,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.include FactoryGirl::Syntax::Methods
+  # Factory girl
 end

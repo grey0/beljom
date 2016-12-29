@@ -6,7 +6,7 @@ class Product
   field :category_id, type: Integer
   field :seller_id, type: Integer
   field :approved, type: Boolean, default: false
-  field :approved_by, type: String
+  field :approved_by, type: Integer
 
   embeds_many :reviews
 
