@@ -55,6 +55,7 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'rb-readline'
   gem 'terminal-notifier-guard'
+  gem 'letter_opener_web', '~> 1.2.0'
 end
 
 group :test do
