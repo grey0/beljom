@@ -13,7 +13,7 @@ module SessionsHelper
       @current_user ||= Seller.find_by(id: seller_id)
     elsif (seller_id = cookies.signed[:seller_id])
       seller = Seller.find_by(id: seller_id)
-      if seller && seller.authenticated?(cookies[:remember_token])
+      if seller && seller.authenticated?(:remember, cookies[:remember_token])
         log_in seller
         @current_user = seller
       end

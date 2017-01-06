@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   delete 'logout_admin'  =>  'sessions#destroy_admin'
 
+  resources :account_activations, only: [:edit]
   resources :categories, only: [:index, :show]
   resources :products
   get 'product_approve' => 'products#approve'

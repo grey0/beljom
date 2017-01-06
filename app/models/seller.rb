@@ -8,7 +8,9 @@ class Seller < ApplicationRecord
             uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
-  attr_accessor :remember_token
+  before_create :create_activation_digest
+
+  attr_accessor :remember_token, :activation_token
 
   has_many :products, dependent: :destroy
 
@@ -28,13 +30,21 @@ class Seller < ApplicationRecord
     update_attribute(:remember_digest, Seller.digest(remember_token))
   end
 
-  def authenticated?(remember_token)
-    return false if remember_digest.nil?
-    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+  def authenticated?(attribute, token)
+    digest = send("#{attribute}_digest")
+    return false if digest.nil?
+    BCrypt::Password.new(digest).is_password?(token)
   end
 
   # Forgets a seller.
   def forget
     update_attribute(:remember_digest, nil)
+  end
+
+  private
+
+  def create_activation_digest
+    self.activation_token  = Seller.new_token
+    self.activation_digest = Seller.digest(activation_token)
   end
 end

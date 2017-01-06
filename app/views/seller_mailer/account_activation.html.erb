@@ -1,0 +1,10 @@
+<h1>Beljom</h1>
+
+<p>Hi <%= @seller.name %>,</p>
+
+<p>
+  Welcome to the Beljom! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@seller.activation_token,
+                                                    email: @seller.email) %>

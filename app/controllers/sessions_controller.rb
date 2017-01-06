@@ -10,10 +10,15 @@ class SessionsController < ApplicationController
   def create
     seller = Seller.find_by(email: params[:session][:email])
     if seller && seller.authenticate(params[:session][:password])
-      flash[:notice] = "Successful"
-      log_in seller
-      params[:session][:remember_me] == '1' ? remember(seller) : forget(seller)
-      remember seller
+      if seller.activated?
+        log_in seller
+        params[:session][:remember_me] == '1' ? remember(seller) : forget(seller)
+        flash[:notice] = "Successful"
+      else
+        message  = "Account not activated. "
+        message += "Check your email for the activation link."
+        flash[:warning] = message
+      end
       redirect_to categories_path
     else
       flash.now[:danger] = 'Invalid email/password combination'

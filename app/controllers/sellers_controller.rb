@@ -3,6 +3,11 @@ class SellersController < ApplicationController
     @seller = Seller.new(seller_param)
 
     if @seller.save
+      seller.update(activated: true)
+      # SellerMailer.account_activation(@seller).deliver_now
+      # flash[:info] = "Please check your email to activate your account."
+      # redirect_to root_url
+      # redirect_to categories_path, notice: 'Please check your email to activate your account.'
       redirect_to categories_path, notice: 'Seller was successfully created.'
     else
       render :new
