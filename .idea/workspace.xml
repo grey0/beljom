@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a74179f2-3e61-4cc8-934b-4a94fb909fad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-    </list>
+    <list default="true" id="a74179f2-3e61-4cc8-934b-4a94fb909fad" name="Default" comment="" />
     <ignored path="beljom.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -860,12 +858,12 @@
       <workItem from="1482945468364" duration="589000" />
       <workItem from="1482961439624" duration="8368000" />
       <workItem from="1483489843385" duration="8198000" />
-      <workItem from="1483678272518" duration="9411000" />
+      <workItem from="1483678272518" duration="9608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84047000" />
+    <option name="totallyTimeSpent" value="84244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
