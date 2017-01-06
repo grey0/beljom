@@ -1,13 +1,8 @@
-<h1>Product#show</h1>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Rating</th>
-  </tr>
-  <tr>
-    <td><%=  @product.name %></td>
-    <td><%=  @product.description %></td>
-    <td><%=  @product.rating %></td>
-  </tr>
-</table>
+<h2><%=  @product.name %></h2>
+<%= link_to 'Back', :back %>
+<p>Image goes here</p>
+
+
+<h4>Description: <%=  @product.description %></h4>
+<h4>Sold by: <%=  @seller.name %></h4>
+<h4>Phone number: <%=  @seller.phone_number %></h4>

@@ -33,7 +33,7 @@ gem 'bcrypt', '~> 3.1.11'
 gem 'bson_ext'
 gem  'mongo'
 gem 'mongoid'
-gem 'pry'
+gem 'bootstrap-sass', '3.3.6'
 #######################################################
 
 group :development, :test do

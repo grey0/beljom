@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-01-03.19:30:54.889</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1146</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-01-05.23:51:17.144</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1285</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -62,7 +62,7 @@
     </table>
     <table id="16" parent="3" name="sellers">
       <ObjectId>32816</ObjectId>
-      <StateNumber>1146</StateNumber>
+      <StateNumber>1285</StateNumber>
     </table>
     <column id="17" parent="12" name="id">
       <Position>1</Position>
@@ -244,12 +244,37 @@
       <DataType>varchar|0</DataType>
       <StateNumber>1146</StateNumber>
     </column>
-    <index id="49" parent="16" name="sellers_pkey">
+    <column id="49" parent="16" name="activation_digest">
+      <Position>10</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>1278</StateNumber>
+    </column>
+    <column id="50" parent="16" name="activated">
+      <Position>11</Position>
+      <DataType>boolean|0</DataType>
+      <StateNumber>1278</StateNumber>
+    </column>
+    <column id="51" parent="16" name="activated_at">
+      <Position>12</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1278</StateNumber>
+    </column>
+    <column id="52" parent="16" name="reset_digest">
+      <Position>13</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>1285</StateNumber>
+    </column>
+    <column id="53" parent="16" name="reset_sent_at">
+      <Position>14</Position>
+      <DataType>timestamp|0</DataType>
+      <StateNumber>1285</StateNumber>
+    </column>
+    <index id="54" parent="16" name="sellers_pkey">
       <ObjectId>32823</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="50" parent="16" name="sellers_pkey">
+    <key id="55" parent="16" name="sellers_pkey">
       <ObjectId>32824</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>sellers_pkey</UnderlyingIndexName>
