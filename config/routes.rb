@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get 'admins_dashboard' => 'admins#dashboard'
 
   get 'login'     =>  'sessions#new'
@@ -13,6 +17,7 @@ Rails.application.routes.draw do
 
   delete 'logout_admin'  =>  'sessions#destroy_admin'
 
+  resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :account_activations, only: [:edit]
   resources :categories, only: [:index, :show]
   resources :products
