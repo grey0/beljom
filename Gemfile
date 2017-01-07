@@ -34,6 +34,9 @@ gem 'bson_ext'
 gem  'mongo'
 gem 'mongoid'
 gem 'bootstrap-sass', '3.3.6'
+gem 'carrierwave', '~> 1.0'
+gem 'rmagick', :require => 'rmagick'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 #######################################################
 
 group :development, :test do

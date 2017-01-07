@@ -10,7 +10,12 @@ class Product
 
   embeds_many :reviews
 
-  # belongs_to :seller
+  def seller
+    Seller.find_by(id: seller_id)
+  end
 
   validates :name, :description, presence: true
+  attr_accessor :product_image, :product_image_cache
+
+  mount_uploader :product_image, ProductImageUploader
 end

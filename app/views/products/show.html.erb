@@ -1,6 +1,6 @@
 <h2><%=  @product.name %></h2>
 <%= link_to 'Back', :back %>
-<p>Image goes here</p>
+<%= image_tag @product.product_image_url.to_s %>
 
 
 <h4>Description: <%=  @product.description %></h4>
