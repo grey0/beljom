@@ -9,7 +9,11 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
+<<<<<<< HEAD
       <IntrospectionTimestamp>2017-01-08.09:26:43.479</IntrospectionTimestamp>
+=======
+      <IntrospectionTimestamp>2017-01-07.02:47:45.089</IntrospectionTimestamp>
+>>>>>>> 5d5c6cd782470f05f443918b14e43f446050e0ec
       <IntrospectionStateNumber>1285</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
