@@ -4,8 +4,8 @@ class Product < ApplicationRecord
   mount_uploaders :product_images, ProductImageUploader
 
   def image_count
-    if product_images.count > 5
-      errors.add(:product_images, 'you cannot upload more than 5 files')
+    if product_images.count > 10
+      errors.add(:product_images, 'you cannot upload more than 10 files')
     end
   end
 end
