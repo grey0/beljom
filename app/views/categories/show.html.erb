@@ -4,4 +4,15 @@
 
 <%= link_to 'Back', categories_path %>
 
-<%= render 'shared/prod_display' %>
+<div class="row">
+  <% @products.each do |product| %>
+      <div class="col-sm-3">
+        <div class="card text-center">
+          <%= image_tag product.product_images.first.url(:thumb) || 'no_image_found', class: 'card-img-top' %>
+          <div class="card-block">
+            <h3 class="card-title"><%= link_to product.name, product %></td></h3>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

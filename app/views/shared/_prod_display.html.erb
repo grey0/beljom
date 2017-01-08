@@ -2,7 +2,7 @@
   <% @products.each do |product| %>
       <div class="col-sm-3">
         <div class="card text-center">
-          <%= image_tag product.product_image_url(:thumb) || 'no_image_found', class: 'card-img-top' %>
+          <%= image_tag product.product_images.first.url(:thumb) || 'no_image_found', class: 'card-img-top' %>
           <div class="card-block">
             <h3 class="card-title"><%= link_to product.name, product %></td></h3>
             <%= link_to "Edit", edit_product_path(product), class: 'btn btn-primary' %>

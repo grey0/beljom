@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+
   def create
     @product = Product.new(product_param)
 
@@ -10,7 +11,7 @@ class ProductsController < ApplicationController
   end
 
   def update
-    @product = Product.find(params[:id])
+    @product = Product.find_by(id: params[:id])
     @product.update(product_param)
     if @product && params[:admin] == 'true'
       redirect_to admins_dashboard_path
@@ -37,23 +38,23 @@ class ProductsController < ApplicationController
 
   def edit
     @admin = params[:admin]
-    @product = Product.find(id: params[:id])
+    @product = Product.find_by(id: params[:id])
   end
 
   def approve
-    product = Product.find(id: params[:product_id])
+    product = Product.find_by(id: params[:product_id])
     product.update(approved: true, approved_by: session[:admin_id])
     redirect_to admins_dashboard_path
   end
 
 
   def destroy
-    @product = Product.find(id: params[:id])
+    @product = Product.find_by(id: params[:id])
     @product.destroy
     redirect_to seller_path(session[:seller_id]), notice: "Successfully delete item"
   end
 
   def product_param
-    params.require(:product).permit(:name, :description, :category_id, :seller_id, :product_image)
+    params.require(:product).permit(:name, :description, :category_id, :seller_id, {product_images: []})
   end
 end
