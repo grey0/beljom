@@ -4,8 +4,11 @@
   <div class="container">
     <h1 class="jumbotron-heading">Beljom</h1>
     <p class="lead text-muted">Mission Statement.</p>
-    <p>
-      <a href="#" class="btn btn-primary">Sign Up as a Seller</a>
+    <%	if not logged_in? %>
+        <p>
+          <a href="#" class="btn btn-primary">Sign Up as a Seller</a>
+        </p>
+    <% end %>
   </div>
 </section>
 
