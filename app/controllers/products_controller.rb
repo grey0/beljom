@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find_by(id: params[:id])
-    # @seller = Seller.find_by(id: @product.seller_id)
+    @seller = @product.seller
   end
 
   def edit
@@ -55,6 +55,6 @@ class ProductsController < ApplicationController
   end
 
   def product_param
-    params.require(:product).permit(:name, :description, :category_id, :seller_id, {product_images: []})
+    params.require(:product).permit(:name, :description, :category_id, :seller_id, {product_images: []}, :price)
   end
 end

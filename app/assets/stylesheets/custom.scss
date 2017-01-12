@@ -393,3 +393,20 @@
   cursor: -ms-grabbing;
   cursor: grabbing;
 }
+
+/* delete image */
+/* slider actions */
+#edit-image {
+  width: 32px;
+  display: block;
+  top: 50%;
+  height: 32px;
+  background-image: image-url("controls.png");
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  margin-top: -16px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s linear 0s;
+  transition: opacity 0.35s linear 0s;
+}

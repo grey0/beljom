@@ -1,7 +1,20 @@
 class Product < ApplicationRecord
   validates :name, :description, presence: true
+  validates :price, presence: true
   validate :image_count
+  validate :price_is_not_neg
+
+
+  belongs_to :seller
+
   mount_uploaders :product_images, ProductImageUploader
+
+  private
+  def price_is_not_neg
+    if price && price < 0
+      errors.add(:price, 'price cannot be negative')
+    end
+  end
 
   def image_count
     if product_images.count > 10
