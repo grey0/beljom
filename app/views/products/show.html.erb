@@ -1,10 +1,37 @@
+<script>
+    $(document).ready(function() {
+        $("#content-slider").lightSlider({
+            loop:true,
+            keyPress:true
+        });
+        $('#image-gallery').lightSlider({
+            gallery:true,
+            item:1,
+            thumbItem:9,
+            slideMargin: 0,
+            speed:500,
+            auto:false,
+            loop:true,
+            onSliderLoad: function() {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+    });
+</script>
 <h2><%=  @product.name %></h2>
 <%= link_to 'Back', :back %>
-<%	 @product.product_images.each do |image| %>
-  <%= image_tag image.url(:display) %>
-<% end %>
 
-
+<div class="demo">
+  <div class="item">
+    <div class="clearfix" style="max-width:474px;">
+      <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+        <%	 @product.product_images.each do |image| %>
+        <li data-thumb="<%= image.url(:gallery_thumb) %>">
+          <%= image_tag image.url(:gallery_display) %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
 <h4>Description: <%=  @product.description %></h4>
-<h4>Sold by: <%=  @seller.name %></h4>
-<h4>Phone number: <%=  @seller.phone_number %></h4>

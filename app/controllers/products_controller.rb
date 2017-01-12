@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find_by(id: params[:id])
-    @seller = Seller.find_by(id: @product.seller_id)
+    # @seller = Seller.find_by(id: @product.seller_id)
   end
 
   def edit

@@ -34,6 +34,14 @@ class ProductImageUploader < CarrierWave::Uploader::Base
     process resize_to_limit: [200, 200]
   end
 
+  version :gallery_thumb do
+    process resize_to_limit: [50, 36]
+  end
+
+  version :gallery_display do
+    process resize_to_limit: [474, 338]
+  end
+
   version :display do
     process resize_to_limit: [300, 300]
   end
