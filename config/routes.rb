@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post 'login'    =>  'sessions#create'
 
-  delete 'logout'  =>  'sessions#destroy'
+  delete 'logout'  =>  'sessions#fetch_item'
 
   get 'admin'     =>  'sessions#new_admin'
 
@@ -20,7 +20,10 @@ Rails.application.routes.draw do
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :account_activations, only: [:edit]
   resources :categories, only: [:index, :show]
-  resources :products
+  resources :products do
+    resources :images, only: [:create, :destroy]
+  end
+  get "/fetch_items" => 'images#from_category', as: 'fetch_items'
   get 'product_approve' => 'products#approve'
   get '/signup'   =>  'sellers#new'
   resources :sellers, only: [:new, :create, :show]

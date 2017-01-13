@@ -12,7 +12,10 @@ class ProductsController < ApplicationController
 
   def update
     @product = Product.find_by(id: params[:id])
-    @product.update(product_param)
+    current_images = @product.product_images
+    edit_params = product_param
+    edit_params[:product_images] += current_images
+    @product.update(edit_params)
     if @product && params[:admin] == 'true'
       redirect_to admins_dashboard_path
     elsif @product
@@ -50,7 +53,7 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find_by(id: params[:id])
-    @product.destroy
+    @product.fetch_item
     redirect_to seller_path(session[:seller_id]), notice: "Successfully delete item"
   end
 

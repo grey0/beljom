@@ -151,7 +151,7 @@ RSpec.describe CategoriesController, type: :controller do
   #
   #   it "redirects to the categories list" do
   #     category = Category.create! valid_attributes
-  #     delete :destroy, params: {id: category.to_param}, sessions: valid_session
+  #     delete :fetch_item, params: {id: category.to_param}, sessions: valid_session
   #     expect(response).to redirect_to(categories_url)
   #   end
   # end

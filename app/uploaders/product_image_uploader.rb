@@ -29,6 +29,13 @@ class ProductImageUploader < CarrierWave::Uploader::Base
   #   # do something
   # end
 
+  after :remove, :clear_uploader
+
+  def clear_uploader
+    @file = @filename = @original_filename = @cache_id = @version = @storage = nil
+    model.send(:write_attribute, mounted_as, nil)
+  end
+
   # Create different versions of your uploaded files:
   version :thumb do
     process resize_to_limit: [200, 200]

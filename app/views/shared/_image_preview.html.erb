@@ -1,0 +1,8 @@
+<div class="row" id="edit_image">
+  <%	@product.product_images.each_with_index do |image, index| %>
+      <div class="image-container-edit">
+        <%= image_tag image.url(:gallery_thumb) %>
+        <%= link_to image_tag('delete', class: "after"), fetch_items_path(product_id: @product, id: index), remote: true %>
+      </div>
+  <% end %>
+</div>

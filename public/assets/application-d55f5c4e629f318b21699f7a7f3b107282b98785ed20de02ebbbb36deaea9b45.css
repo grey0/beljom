@@ -8795,7 +8795,7 @@ button.close {
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2015 Sachin N; Licensed MIT */
 /** /!!! core css Should not edit !!!/**/
-/* line 9, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 9, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter {
   overflow: hidden;
   -webkit-touch-callout: none;
@@ -8806,31 +8806,31 @@ button.close {
   user-select: none;
 }
 
-/* line 18, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 18, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lightSlider:before, .lightSlider:after {
   content: " ";
   display: table;
 }
 
-/* line 22, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 22, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lightSlider {
   overflow: hidden;
   margin: 0;
 }
 
-/* line 26, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 26, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper {
   max-width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-/* line 31, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 31, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper > .lightSlider:after {
   clear: both;
 }
 
-/* line 34, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 34, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper .lSSlide {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
@@ -8845,12 +8845,12 @@ button.close {
   transition-timing-function: inherit !important;
 }
 
-/* line 47, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 47, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper .lSFade {
   position: relative;
 }
 
-/* line 50, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 50, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper .lSFade > * {
   position: absolute !important;
   top: 0;
@@ -8860,7 +8860,7 @@ button.close {
   width: 100%;
 }
 
-/* line 58, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 58, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper.usingCss .lSFade > * {
   opacity: 0;
   -webkit-transition-delay: 0s;
@@ -8873,33 +8873,33 @@ button.close {
   transition-timing-function: inherit !important;
 }
 
-/* line 69, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 69, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper .lSFade > *.active {
   z-index: 10;
 }
 
-/* line 72, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 72, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideWrapper.usingCss .lSFade > *.active {
   opacity: 1;
 }
 
 /** /!!! End of core css Should not edit !!!/**/
 /* Pager */
-/* line 78, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 78, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSpg {
   margin: 10px 0 0;
   padding: 0;
   text-align: center;
 }
 
-/* line 83, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 83, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSpg > li {
   cursor: pointer;
   display: inline-block;
   padding: 0 5px;
 }
 
-/* line 88, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 88, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSpg > li a {
   background-color: #222222;
   border-radius: 30px;
@@ -8914,24 +8914,24 @@ button.close {
   transition: all 0.5s linear 0s;
 }
 
-/* line 101, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 101, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
   background-color: #428bca;
 }
 
-/* line 104, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 104, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .media {
   opacity: 0.8;
 }
 
-/* line 107, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 107, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .media.active {
   opacity: 1;
 }
 
 /* End of pager */
 /** Gallery */
-/* line 113, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 113, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery {
   list-style: none outside none;
   padding-left: 0;
@@ -8952,39 +8952,39 @@ button.close {
   user-select: none;
 }
 
-/* line 132, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 132, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery li {
   overflow: hidden;
   -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
   transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
 
-/* line 137, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 137, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
   border-radius: 5px;
 }
 
-/* line 140, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 140, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery img {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-/* line 145, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 145, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
   content: " ";
   display: table;
 }
 
-/* line 149, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 149, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lSPager.lSGallery:after {
   clear: both;
 }
 
 /* End of Gallery*/
 /* slider actions */
-/* line 155, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 155, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSAction > a {
   width: 32px;
   display: block;
@@ -9000,29 +9000,29 @@ button.close {
   transition: opacity 0.35s linear 0s;
 }
 
-/* line 169, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 169, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSAction > a:hover {
   opacity: 1;
 }
 
-/* line 172, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 172, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSAction > .lSPrev {
   background-position: 0 0;
   left: 10px;
 }
 
-/* line 176, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 176, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSAction > .lSNext {
   background-position: -32px 0;
   right: 10px;
 }
 
-/* line 180, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 180, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSAction > a.disabled {
   pointer-events: none;
 }
 
-/* line 183, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 183, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .cS-hidden {
   height: 1px;
   opacity: 0;
@@ -9031,45 +9031,45 @@ button.close {
 }
 
 /* vertical */
-/* line 192, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 192, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical {
   position: relative;
 }
 
-/* line 195, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 195, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical.noPager {
   padding-right: 0px !important;
 }
 
-/* line 198, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 198, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .lSGallery {
   position: absolute !important;
   right: 0;
   top: 0;
 }
 
-/* line 203, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 203, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .lightSlider > * {
   width: 100% !important;
   max-width: none !important;
 }
 
 /* vertical controlls */
-/* line 209, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 209, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .lSAction > a {
   left: 50%;
   margin-left: -14px;
   margin-top: 0;
 }
 
-/* line 214, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 214, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .lSAction > .lSNext {
   background-position: 31px -31px;
   bottom: 10px;
   top: auto;
 }
 
-/* line 219, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 219, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .lSAction > .lSPrev {
   background-position: 0 -31px;
   bottom: auto;
@@ -9078,28 +9078,28 @@ button.close {
 
 /* vertical */
 /* Rtl */
-/* line 228, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 228, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.lSrtl {
   direction: rtl;
 }
 
-/* line 231, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 231, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lightSlider, .lSSlideOuter .lSPager {
   padding-left: 0;
   list-style: none outside none;
 }
 
-/* line 235, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 235, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.lSrtl .lightSlider, .lSSlideOuter.lSrtl .lSPager {
   padding-right: 0;
 }
 
-/* line 238, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 238, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .lightSlider > *, .lSSlideOuter .lSGallery li {
   float: left;
 }
 
-/* line 241, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 241, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.lSrtl .lightSlider > *, .lSSlideOuter.lSrtl .lSGallery li {
   float: right !important;
 }
@@ -9193,42 +9193,42 @@ button.close {
     bottom: 0;
   }
 }
-/* line 350, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 350, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .rightEnd {
   -webkit-animation: rightEnd 0.3s;
   animation: rightEnd 0.3s;
   position: relative;
 }
 
-/* line 355, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 355, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter .leftEnd {
   -webkit-animation: leftEnd 0.3s;
   animation: leftEnd 0.3s;
   position: relative;
 }
 
-/* line 360, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 360, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .rightEnd {
   -webkit-animation: topEnd 0.3s;
   animation: topEnd 0.3s;
   position: relative;
 }
 
-/* line 365, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 365, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.vertical .leftEnd {
   -webkit-animation: bottomEnd 0.3s;
   animation: bottomEnd 0.3s;
   position: relative;
 }
 
-/* line 370, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 370, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.lSrtl .rightEnd {
   -webkit-animation: leftEnd 0.3s;
   animation: leftEnd 0.3s;
   position: relative;
 }
 
-/* line 375, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 375, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lSSlideOuter.lSrtl .leftEnd {
   -webkit-animation: rightEnd 0.3s;
   animation: rightEnd 0.3s;
@@ -9236,7 +9236,7 @@ button.close {
 }
 
 /*/  GRab cursor */
-/* line 381, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 381, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lightSlider.lsGrab > * {
   cursor: -webkit-grab;
   cursor: -moz-grab;
@@ -9245,7 +9245,7 @@ button.close {
   cursor: grab;
 }
 
-/* line 388, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/custom.scss */
+/* line 388, /Users/babassmine/RubymineProjects/beljom/app/assets/stylesheets/gallery.scss */
 .lightSlider.lsGrabbing > * {
   cursor: move;
   cursor: -webkit-grabbing;
