@@ -18,9 +18,12 @@
         });
     });
 </script>
-<h2><%=  @product.name %></h2>
-<%= link_to 'Back', :back %>
-
+<div class="container">
+  <%= link_to 'Back', :back %>
+</div>
+<div class="container">
+  <h2><%=  "#{@product.name} ()" %></h2>
+</div>
 <div class="demo">
   <div class="item">
     <div class="clearfix" style="max-width:474px;">
@@ -34,6 +37,7 @@
     </div>
   </div>
 </div>
+<h4>Price: <%=  @product.description %></h4>
 <h4>Description: <%=  @product.description %></h4>
 <h4>Sold by: <%=  @seller.name %></h4>
 <h4>contact: <%=  @seller.phone_number %></h4>

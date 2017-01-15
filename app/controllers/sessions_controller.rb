@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
         message += "Check your email for the activation link."
         flash[:warning] = message
       end
-      redirect_to categories_path
+      redirect_to seller
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'

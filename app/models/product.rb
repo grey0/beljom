@@ -4,10 +4,21 @@ class Product < ApplicationRecord
   validate :image_count
   validate :price_is_not_neg
 
+  enum currency: [:le, :usd]
+  enum condition: [:neww, :used]
+
 
   belongs_to :seller
 
   mount_uploaders :product_images, ProductImageUploader
+
+  def cond
+    if neww?
+      'New'
+    else
+      condition.try(:capitalize)
+    end
+  end
 
   private
   def price_is_not_neg

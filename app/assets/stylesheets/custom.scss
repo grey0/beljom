@@ -20,33 +20,27 @@
   display: block;
 }
 
-
-/* footer */
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+/* entry display */
+div.entry {
+  height: 280px;
+  width: 280px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 4px 0 12px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  text-overflow-multiline: ellipsis;
 }
 
-footer a {
-  color: #555;
+div.entry-main {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 4px 0 12px 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
+/* seller edit and delete button */
+div.seller-options {
+  width: 50%;
+  margin: 0 auto;
 }

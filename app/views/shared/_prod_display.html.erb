@@ -1,13 +1,18 @@
 <div class="row">
   <% @products.each do |product| %>
       <div class="col-sm-3">
-        <div class="card text-center">
+        <div class="entry card text-center">
           <%= image_tag product.product_images.first.try(:url, :thumb) || 'no_image_found', class: 'card-img-top' %>
           <div class="card-block">
-            <h3 class="card-title"><%= link_to product.name, product %></td></h3>
-            <%= link_to "Edit", edit_product_path(product), class: 'btn btn-primary' %>
-            <%= link_to "Delete", product, method: :delete, class: 'btn btn-danger' %>
+            <div class="card-block">
+              <p class="card-text"><%= link_to "[#{product.cond}] (#{product.currency} #{product.price})", product %></p>
+              <p class="card-text"><%= link_to "#{product.name}", product %></p>
+            </div>
           </div>
+        </div>
+        <div class="seller-options">
+          <%= link_to "Edit", edit_product_path(product), class: 'btn btn-primary' %>
+          <%= link_to "Delete", product, method: :delete, class: 'btn btn-danger' %>
         </div>
       </div>
   <% end %>

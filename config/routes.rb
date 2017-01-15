@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post 'login'    =>  'sessions#create'
 
-  delete 'logout'  =>  'sessions#fetch_item'
+  delete 'logout'  =>  'sessions#destroy'
 
   get 'admin'     =>  'sessions#new_admin'
 

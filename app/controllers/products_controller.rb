@@ -1,7 +1,9 @@
 class ProductsController < ApplicationController
 
   def create
-    @product = Product.new(product_param)
+    prod_param = product_param
+    prod_param[:currency], prod_param[:condition] = prod_param[:currency].to_i, prod_param[:condition].to_i
+    @product = Product.new(prod_param)
 
     if @product.save
       redirect_to seller_path(session[:seller_id]), notice: "Item was successfully added"
@@ -14,7 +16,10 @@ class ProductsController < ApplicationController
     @product = Product.find_by(id: params[:id])
     current_images = @product.product_images
     edit_params = product_param
-    edit_params[:product_images] += current_images
+    edit_params[:currency], edit_params[:condition] = edit_params[:currency].to_i, edit_params[:condition].to_i
+    if edit_params[:product_images]
+      edit_params[:product_images] += current_images
+    end
     @product.update(edit_params)
     if @product && params[:admin] == 'true'
       redirect_to admins_dashboard_path
@@ -58,6 +63,6 @@ class ProductsController < ApplicationController
   end
 
   def product_param
-    params.require(:product).permit(:name, :description, :category_id, :seller_id, {product_images: []}, :price)
+    params.require(:product).permit(:name, :description, :category_id, :seller_id, {product_images: []}, :price, :currency, :condition)
   end
 end
