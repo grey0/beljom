@@ -37,10 +37,18 @@ div.entry-main {
   padding: 20px;
   margin: 4px 0 12px 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  text-overflow-multiline: ellipsis;
 }
 
 /* seller edit and delete button */
 div.seller-options {
   width: 50%;
   margin: 0 auto;
+}
+
+/* image display */
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
