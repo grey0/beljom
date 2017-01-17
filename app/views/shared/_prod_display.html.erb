@@ -1,6 +1,6 @@
 <div class="row">
   <% @products.each do |product| %>
-      <div class="col-sm-3">
+      <div class="col-sm-5 col-md-4">
         <div class="entry card text-center">
           <%= image_tag product.product_images.first.try(:url, :thumb) || 'no_image_found', class: 'card-img-top' %>
           <div class="card-block">
