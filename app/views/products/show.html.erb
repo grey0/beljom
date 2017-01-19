@@ -18,6 +18,7 @@
         });
     });
 </script>
+<% provide(:title, @product.name) %>
 <div class="container">
   <h2><%=  "#{@product.name} (#{@product.cond})" %></h2>
 </div>

@@ -1,9 +1,11 @@
 <div class="container col-md-6">
-  <p id="notice"><%= notice %></p>
   <%=	 form_for @seller, html: {class: 'form-horizontal'} do |f| %>
       <% if @seller.errors.any? %>
           <div id="error_explanation">
-            <h2><%= pluralize(@seller.errors.count, "error") %> prohibited this category from being saved:</h2>
+            <div class="alert alert-danger">
+              The form contains <%= pluralize(@seller.errors.count, "error") %>.
+            </div>
+            <!--<h2><%= pluralize(@seller.errors.count, "error") %> prohibited this category from being saved:</h2>-->
 
             <ul>
               <% @seller.errors.full_messages.each do |message| %>

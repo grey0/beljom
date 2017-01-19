@@ -3,7 +3,7 @@
       <div class="col-sm-4 col-md-3">
         <div class="entry card text-center">
           <%= link_to raw("<i class=\"glyphicon glyphicon-edit\"></i>"), edit_product_path(product), class: 'btn btn-primary' %>
-          <%= link_to image_tag(product.product_images.first.try(:url, :thumb) || 'no_image_found', class: 'card-img-top'), product %>
+          <%= link_to image_tag(product.product_images.first.try(:url, :thumb) || 'no_image_found', class: 'card-img-top d-img'), product %>
           <%= link_to raw("<i class=\"glyphicon glyphicon-trash\"></i>"), product, method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure?'} %>
         </div>
       </div>

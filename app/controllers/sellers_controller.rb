@@ -8,7 +8,8 @@ class SellersController < ApplicationController
       # flash[:info] = "Please check your email to activate your account."
       # redirect_to root_url
       # redirect_to categories_path, notice: 'Please check your email to activate your account.'
-      redirect_to categories_path, notice: 'Seller was successfully created.'
+      flash[:info] = 'Seller was successfully created.'
+      redirect_to categories_path
     else
       render :new
     end

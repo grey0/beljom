@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       if seller.activated?
         log_in seller
         params[:session][:remember_me] == '1' ? remember(seller) : forget(seller)
-        flash[:notice] = "Successful"
+        flash[:info] = "Successful"
       else
         message  = "Account not activated. "
         message += "Check your email for the activation link."
@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
   def create_admin
     admin = Admin.find_by(email: params[:session][:email])
     if admin && admin.authenticate(params[:session][:password])
-      flash[:notice] = "Successful"
+      flash[:info] = "Successful"
       log_in_admin admin
       redirect_to admins_dashboard_path
     else

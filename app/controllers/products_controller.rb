@@ -6,7 +6,8 @@ class ProductsController < ApplicationController
     @product = Product.new(prod_param)
 
     if @product.save
-      redirect_to seller_path(session[:seller_id]), notice: "Item was successfully added"
+      flash[:info] = "Item was successfully added"
+      redirect_to seller_path(session[:seller_id])
     else
       render :new
     end
@@ -24,7 +25,8 @@ class ProductsController < ApplicationController
     if @product && params[:admin] == 'true'
       redirect_to admins_dashboard_path
     elsif @product
-      redirect_to seller_path(session[:seller_id]), notice: "Item was successfully update"
+      flash[:info] = 'Item was successfully update'
+      redirect_to seller_path(session[:seller_id])
     else
       render :new
     end
@@ -62,7 +64,8 @@ class ProductsController < ApplicationController
     @product.save
     @product.reload
     @product.destroy
-    redirect_to seller_path(session[:seller_id]), notice: "Successfully delete item"
+    flash[:info] = "Successfully delete item"
+    redirect_to seller_path(session[:seller_id])
   end
 
   def product_param
