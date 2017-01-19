@@ -24,10 +24,10 @@
 
 /* entry display */
 div.entry {
-  height: 280px;
-  width: 280px;
+  height: 90px;
+  width: 100%;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   margin: 4px 0 12px 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
@@ -53,4 +53,33 @@ div.seller-options {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* mobile div */
+
+.wrapper {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 100%;
+}
+
+.icon {
+  align-self: center;
+  color: black;
+  flex: 1 1 auto;
+  font-size: 32px;
+}
+
+.content {
+  //background-color: lightgreen;
+  color: black;
+  flex: 12 1 auto;
+  padding: 20px;
+  align-self: center;
+}
+
+/* */
+.div-click{
+  padding: 0px;
 }

@@ -58,7 +58,10 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find_by(id: params[:id])
-    @product.fetch_item
+    @product.remove_product_images!
+    @product.save
+    @product.reload
+    @product.destroy
     redirect_to seller_path(session[:seller_id]), notice: "Successfully delete item"
   end
 
