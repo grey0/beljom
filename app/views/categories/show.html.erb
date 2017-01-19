@@ -7,12 +7,20 @@
 <div class="row">
   <% @products.each do |product| %>
     <div class="col-sm-4 col-md-3">
-      <div class="entry card wrapper">
+      <div class="entry card wrapper", onclick='location.href="<%= product_path(product) %>"'>
         <%= image_tag product.product_images.first.url(:thumb) || 'no_image_found', class: 'icon card-img-top d-img' %>
         <div class="content card-block">
-          <h6 class="card-title"><%= link_to "[#{product.cond}]", product %></h6>
-          <h6 class="card-title"><%= link_to "(#{product.currency} #{product.price})", product %></h6>
-          <h6 class="card-title"><%= link_to "#{product.name}", product %></h6>
+          <table>
+            <tr>
+              <td><%= link_to "[#{product.cond}]", product %></td>
+            </tr>
+            <tr>
+              <td><%= link_to "(#{product.currency} #{product.price})", product %></td>
+            </tr>
+            <tr>
+              <td><%= link_to "#{product.name}", product %></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

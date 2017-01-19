@@ -19,10 +19,7 @@
     });
 </script>
 <div class="container">
-  <%= link_to 'Back', :back %>
-</div>
-<div class="container">
-  <h2><%=  "#{@product.name} ()" %></h2>
+  <h2><%=  "#{@product.name} (#{@product.cond})" %></h2>
 </div>
 <div class="demo">
   <div class="item">
@@ -37,7 +34,23 @@
     </div>
   </div>
 </div>
-<h4>Price: <%=  @product.description %></h4>
-<h4>Description: <%=  @product.description %></h4>
-<h4>Sold by: <%=  @seller.name %></h4>
-<h4>contact: <%=  @seller.phone_number %></h4>
+<div class="container des-entry">
+  <table>
+    <tr>
+      <td><b><em>Price:</em></b></td>
+      <td><%=  @product.price %></td>
+    </tr>
+    <tr>
+      <td><b><em>Description:</em></b></td>
+      <td><%=  @product.description %></td>
+    </tr>
+    <tr>
+      <td><b><em>Sold by:</em></b></td>
+      <td><%=  @seller.name %></td>
+    </tr>
+    <tr>
+      <td><b><em>Contact:</em></b></td>
+      <td><%=  @seller.phone_number %></td>
+    </tr>
+  </table>
+</div>

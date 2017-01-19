@@ -18,3 +18,4 @@
 
 /data
 /public/uploads/*
+/db/seed.rb
