@@ -11,7 +11,7 @@
   <% @categories.each do |category| %>
   <div class="col-sm-4">
     <div class="entry-main card text-center">
-      <%= image_tag "#{category.name.downcase}", class: 'main-image card-img-top' %>
+      <%= image_tag "#{category.name.downcase}", class: 'main-image card-img-top d-img' %>
       <div class="content card-block">
         <h3 class="card-title"><%= link_to category.name, category, class: 'card-title' %></h3>
       </div>

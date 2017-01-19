@@ -3,14 +3,14 @@
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
     <root id="1"/>
     <database id="2" parent="1" name="beljom_development">
-      <ObjectId>32790</ObjectId>
+      <ObjectId>49191</ObjectId>
       <Current>1</Current>
       <Visible>1</Visible>
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-01-17.10:38:43.182</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1378</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-01-19.12:38:57.123</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1406</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -30,90 +30,90 @@
       <ObjectId>12381</ObjectId>
     </schema>
     <sequence id="9" parent="3" name="admins_id_seq">
-      <ObjectId>32792</ObjectId>
-      <StateNumber>1125</StateNumber>
+      <ObjectId>49193</ObjectId>
+      <StateNumber>1399</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <sequence id="10" parent="3" name="categories_id_seq">
-      <ObjectId>32803</ObjectId>
-      <StateNumber>1126</StateNumber>
+      <ObjectId>49204</ObjectId>
+      <StateNumber>1400</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <sequence id="11" parent="3" name="products_id_seq">
-      <ObjectId>40979</ObjectId>
-      <StateNumber>1305</StateNumber>
+      <ObjectId>49215</ObjectId>
+      <StateNumber>1401</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <sequence id="12" parent="3" name="sellers_id_seq">
-      <ObjectId>32814</ObjectId>
-      <StateNumber>1127</StateNumber>
+      <ObjectId>49229</ObjectId>
+      <StateNumber>1402</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <table id="13" parent="3" name="admins">
-      <ObjectId>32794</ObjectId>
-      <StateNumber>1125</StateNumber>
+      <ObjectId>49195</ObjectId>
+      <StateNumber>1399</StateNumber>
     </table>
     <table id="14" parent="3" name="ar_internal_metadata">
-      <ObjectId>32833</ObjectId>
-      <StateNumber>1131</StateNumber>
+      <ObjectId>49248</ObjectId>
+      <StateNumber>1406</StateNumber>
     </table>
     <table id="15" parent="3" name="categories">
-      <ObjectId>32805</ObjectId>
-      <StateNumber>1126</StateNumber>
+      <ObjectId>49206</ObjectId>
+      <StateNumber>1400</StateNumber>
     </table>
     <table id="16" parent="3" name="products">
-      <ObjectId>40981</ObjectId>
-      <StateNumber>1378</StateNumber>
+      <ObjectId>49217</ObjectId>
+      <StateNumber>1401</StateNumber>
     </table>
     <table id="17" parent="3" name="schema_migrations">
-      <ObjectId>32825</ObjectId>
-      <StateNumber>1128</StateNumber>
+      <ObjectId>49240</ObjectId>
+      <StateNumber>1403</StateNumber>
     </table>
     <table id="18" parent="3" name="sellers">
-      <ObjectId>32816</ObjectId>
-      <StateNumber>1285</StateNumber>
+      <ObjectId>49231</ObjectId>
+      <StateNumber>1402</StateNumber>
     </table>
     <column id="19" parent="13" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
       <DefaultExpression>nextval(&apos;admins_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="20" parent="13" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
     </column>
     <column id="21" parent="13" name="email">
       <Position>3</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
     </column>
     <column id="22" parent="13" name="password_digest">
       <Position>4</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
     </column>
     <column id="23" parent="13" name="created_at">
       <Position>5</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
     </column>
     <column id="24" parent="13" name="updated_at">
       <Position>6</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1125</StateNumber>
+      <StateNumber>1399</StateNumber>
     </column>
     <index id="25" parent="13" name="admins_pkey">
-      <ObjectId>32801</ObjectId>
+      <ObjectId>49202</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="26" parent="13" name="admins_pkey">
-      <ObjectId>32802</ObjectId>
+      <ObjectId>49203</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>admins_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -122,32 +122,32 @@
       <Position>1</Position>
       <DataType>varchar|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1131</StateNumber>
+      <StateNumber>1406</StateNumber>
     </column>
     <column id="28" parent="14" name="value">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1131</StateNumber>
+      <StateNumber>1406</StateNumber>
     </column>
     <column id="29" parent="14" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1131</StateNumber>
+      <StateNumber>1406</StateNumber>
     </column>
     <column id="30" parent="14" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1131</StateNumber>
+      <StateNumber>1406</StateNumber>
     </column>
     <index id="31" parent="14" name="ar_internal_metadata_pkey">
-      <ObjectId>32839</ObjectId>
+      <ObjectId>49254</ObjectId>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="32" parent="14" name="ar_internal_metadata_pkey">
-      <ObjectId>32840</ObjectId>
+      <ObjectId>49255</ObjectId>
       <ColNames>key</ColNames>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -156,33 +156,33 @@
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1126</StateNumber>
+      <StateNumber>1400</StateNumber>
       <DefaultExpression>nextval(&apos;categories_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="34" parent="15" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1126</StateNumber>
+      <StateNumber>1400</StateNumber>
     </column>
     <column id="35" parent="15" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1126</StateNumber>
+      <StateNumber>1400</StateNumber>
     </column>
     <column id="36" parent="15" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1126</StateNumber>
+      <StateNumber>1400</StateNumber>
     </column>
     <index id="37" parent="15" name="categories_pkey">
-      <ObjectId>32812</ObjectId>
+      <ObjectId>49213</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="38" parent="15" name="categories_pkey">
-      <ObjectId>32813</ObjectId>
+      <ObjectId>49214</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>categories_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -191,86 +191,86 @@
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
       <DefaultExpression>nextval(&apos;products_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="40" parent="16" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="41" parent="16" name="description">
       <Position>3</Position>
       <DataType>text|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="42" parent="16" name="rating">
       <Position>4</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="43" parent="16" name="category_id">
       <Position>5</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="44" parent="16" name="seller_id">
       <Position>6</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="45" parent="16" name="approved">
       <Position>7</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
       <DefaultExpression>false</DefaultExpression>
     </column>
     <column id="46" parent="16" name="approved_by">
       <Position>8</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="47" parent="16" name="created_at">
       <Position>9</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="48" parent="16" name="updated_at">
       <Position>10</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1305</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="49" parent="16" name="product_images">
       <Position>11</Position>
       <DataType>varchar[]|0</DataType>
-      <StateNumber>1306</StateNumber>
+      <StateNumber>1401</StateNumber>
       <DefaultExpression>&apos;{}&apos;::character varying[]</DefaultExpression>
     </column>
     <column id="50" parent="16" name="price">
       <Position>12</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1309</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <column id="51" parent="16" name="currency">
-      <Position>15</Position>
+      <Position>13</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1378</StateNumber>
+      <StateNumber>1401</StateNumber>
       <DefaultExpression>0</DefaultExpression>
     </column>
     <column id="52" parent="16" name="condition">
-      <Position>16</Position>
+      <Position>14</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>1378</StateNumber>
+      <StateNumber>1401</StateNumber>
     </column>
     <index id="53" parent="16" name="products_pkey">
-      <ObjectId>40989</ObjectId>
+      <ObjectId>49227</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="54" parent="16" name="products_pkey">
-      <ObjectId>40990</ObjectId>
+      <ObjectId>49228</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>products_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -279,15 +279,15 @@
       <Position>1</Position>
       <DataType>varchar|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1128</StateNumber>
+      <StateNumber>1403</StateNumber>
     </column>
     <index id="56" parent="17" name="schema_migrations_pkey">
-      <ObjectId>32831</ObjectId>
+      <ObjectId>49246</ObjectId>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="57" parent="17" name="schema_migrations_pkey">
-      <ObjectId>32832</ObjectId>
+      <ObjectId>49247</ObjectId>
       <ColNames>version</ColNames>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
@@ -296,83 +296,83 @@
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
       <DefaultExpression>nextval(&apos;sellers_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="59" parent="18" name="name">
       <Position>2</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="60" parent="18" name="email">
       <Position>3</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="61" parent="18" name="phone_number">
       <Position>4</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="62" parent="18" name="whatsapp">
       <Position>5</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="63" parent="18" name="password_digest">
       <Position>6</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="64" parent="18" name="created_at">
       <Position>7</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="65" parent="18" name="updated_at">
       <Position>8</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1127</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="66" parent="18" name="remember_digest">
       <Position>9</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1146</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="67" parent="18" name="activation_digest">
       <Position>10</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1278</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="68" parent="18" name="activated">
       <Position>11</Position>
       <DataType>boolean|0</DataType>
-      <StateNumber>1278</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="69" parent="18" name="activated_at">
       <Position>12</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>1278</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="70" parent="18" name="reset_digest">
       <Position>13</Position>
       <DataType>varchar|0</DataType>
-      <StateNumber>1285</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <column id="71" parent="18" name="reset_sent_at">
       <Position>14</Position>
       <DataType>timestamp|0</DataType>
-      <StateNumber>1285</StateNumber>
+      <StateNumber>1402</StateNumber>
     </column>
     <index id="72" parent="18" name="sellers_pkey">
-      <ObjectId>32823</ObjectId>
+      <ObjectId>49238</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="73" parent="18" name="sellers_pkey">
-      <ObjectId>32824</ObjectId>
+      <ObjectId>49239</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>sellers_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
