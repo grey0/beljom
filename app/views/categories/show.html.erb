@@ -15,7 +15,7 @@
               <td><%= link_to "[#{product.cond}]", product %></td>
             </tr>
             <tr>
-              <td><%= link_to "(#{product.currency} #{product.price})", product %></td>
+              <td><%= link_to "(#{number_to_currency(product.price, unit: product.unit, separator: ".", delimiter: "")})", product %></td>
             </tr>
             <tr>
               <td><%= link_to "#{product.name}", product %></td>

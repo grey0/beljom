@@ -39,7 +39,7 @@
   <table>
     <tr>
       <td><b><em>Price:</em></b></td>
-      <td><%=  @product.price %></td>
+      <td><%=  number_to_currency(@product.price, unit: @product.unit, separator: ".", delimiter: "") %></td>
     </tr>
     <tr>
       <td><b><em>Description:</em></b></td>

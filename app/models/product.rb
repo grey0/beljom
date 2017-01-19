@@ -20,6 +20,15 @@ class Product < ApplicationRecord
     end
   end
 
+  def unit
+    case currency
+     when 'le'
+       'Le '
+     when 'usd'
+       '$ '
+    end
+  end
+
   private
   def price_is_not_neg
     if price && price < 0
