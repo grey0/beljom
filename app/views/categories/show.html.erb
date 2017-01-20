@@ -12,13 +12,13 @@
         <div class="content card-block">
           <table>
             <tr>
-              <td><%= link_to "[#{product.cond}]", product %></td>
+              <td><%= "[#{product.cond}]" %></td>
             </tr>
             <tr>
-              <td><%= link_to "(#{number_to_currency(product.price, unit: product.unit, separator: ".", delimiter: "")})", product %></td>
+              <td><%= "(#{number_to_currency(product.price, unit: product.unit, separator: ".", delimiter: "")})" %></td>
             </tr>
             <tr>
-              <td><%= link_to "#{product.name}", product %></td>
+              <td><div class="small-des-td des-td"><%= "#{product.name}" %></div></td>
             </tr>
           </table>
         </div>
