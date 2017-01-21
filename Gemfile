@@ -37,6 +37,8 @@ gem 'bootstrap-sass', '3.3.6'
 gem 'carrierwave', '~> 1.0'
 gem 'rmagick', :require => 'rmagick'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'ransack'
+# gem 'ransack', github: 'activerecord-hackery/ransack'
 #######################################################
 
 group :development, :test do
