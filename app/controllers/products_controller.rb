@@ -37,9 +37,14 @@ class ProductsController < ApplicationController
     # @categories_arry = Category.all.map{|e| [e.name, e.id]}
   end
 
-  def index
-    @products = Product.where(category_id: params[:category_id])
-  end
+  # def index
+  #   # @products = Product.where(category_id: params[:category_id])
+  #   # @q = Product.where(category_id: params[:id]).ransack(params[:q])
+  #   # @products = @q.result
+  #   respond_to do |format|
+  #     format.js
+  #   end
+  # end
 
   def show
     @product = Product.find_by(id: params[:id])

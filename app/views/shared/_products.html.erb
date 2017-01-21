@@ -1,0 +1,22 @@
+<div class="row" id="products">
+  <% @products.each do |product| %>
+      <div class="col-sm-4 col-md-3">
+        <div class="entry card wrapper", onclick='location.href="<%= product_path(product) %>"'>
+          <%= image_tag product.product_images.first.url(:thumb) || 'no_image_found', class: 'icon card-img-top d-img' %>
+          <div class="content card-block">
+            <table>
+              <tr>
+                <td><%= link_to "[#{product.cond}]", product %></td>
+              </tr>
+              <tr>
+                <td><%= link_to "(#{number_to_currency(product.price, unit: product.unit, separator: ".", delimiter: "")})", product %></td>
+              </tr>
+              <tr>
+                <td><%= link_to "#{product.name}", product %></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>

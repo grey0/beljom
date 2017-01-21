@@ -10,7 +10,9 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @products = Product.where(category_id: params[:id]) # display non approved products
+    # @products = Product.where(category_id: params[:id]) # display non approved products
+    @q = Product.where(category_id: params[:id]).ransack(params[:q])
+    @products = @q.result
   end
 
   # GET /categories/new
