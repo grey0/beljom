@@ -11,7 +11,7 @@ class SellersController < ApplicationController
       flash[:info] = 'Seller was successfully created.'
       redirect_to categories_path
     else
-      render :new
+      render action: 'new'
     end
   end
 

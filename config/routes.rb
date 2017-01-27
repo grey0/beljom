@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get "/fetch_items" => 'images#from_category', as: 'fetch_items'
   get 'product_approve' => 'products#approve'
   get '/signup'   =>  'sellers#new'
+  get '/sellers'   =>  'sellers#new'
   resources :sellers, only: [:new, :create, :show]
 
   root 'categories#index'
