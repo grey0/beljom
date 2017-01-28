@@ -11,7 +11,7 @@
   <% @categories.each do |category| %>
   <div class="col-xxs-12 col-xs-12 col-sm-4 col-md-4 col-centered">
     <div class="entry-main main-wrapper card text-center"  onclick='location.href="<%= category_path(category) %>"'>
-      <%= image_tag "#{category.name.downcase}", class: 'main-image card-img-top d-img icon' %>
+      <%= image_tag "#{category.name.downcase}-copy", class: 'main-image card-img-top d-img icon' %>
       <div class="content card-block content">
         <h3 class="card-title"><%= category.name %></h3>
       </div>
