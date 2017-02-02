@@ -4,7 +4,8 @@
   <%	 @products.each do |product| %>
     <tr>
       <td><%= link_to product.name, edit_product_path(product, admin: true) %></td>
-      <td><%= link_to "Approve", product_approve_path(product_id: product.id, admin_id: session[:admin_id]) %></td>
+      <td><%= link_to 'delete', product, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      <td><%= link_to "Approve", product_approve_path(product_id: product.id, admin_id: session[:admin_id]) unless product.approved %></td>
     </tr>
   <%	 end %>
 </table>

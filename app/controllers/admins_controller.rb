@@ -1,7 +1,7 @@
 class AdminsController < ApplicationController
   def dashboard
     if admin?
-      @products = Product.where(approved: false)
+      @products = Product.all
     else
       redirect_to root_path, status: 401
     end
