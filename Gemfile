@@ -39,6 +39,7 @@ gem 'rmagick', :require => 'rmagick'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'ransack'
 # gem 'ransack', github: 'activerecord-hackery/ransack'
+gem "font-awesome-rails"
 #######################################################
 
 group :development, :test do

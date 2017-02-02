@@ -88,6 +88,8 @@ GEM
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
     ffi (1.9.14)
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -286,6 +288,7 @@ DEPENDENCIES
   carrierwave-mongoid
   coffee-rails (~> 4.2)
   factory_girl_rails
+  font-awesome-rails
   guard-rails
   guard-rspec
   jbuilder (~> 2.5)

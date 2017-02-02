@@ -17,6 +17,10 @@ Rails.application.routes.draw do
 
   delete 'logout_admin'  =>  'sessions#destroy_admin'
 
+  get 'about'   =>  'categories#about'
+
+  get 'contact' =>  'categories#contact'
+
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :account_activations, only: [:edit]
   resources :categories, only: [:index, :show]

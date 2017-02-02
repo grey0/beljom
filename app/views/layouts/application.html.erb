@@ -52,8 +52,8 @@
             <%	if logged_in? %>
                 <li><%=  link_to 'Me Markit', seller_path(session[:seller_id]) %></li>
             <% end %>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <%	if logged_in? %>
@@ -83,4 +83,11 @@
       <%= yield %>
     </div>
   </body>
+  <footer class="footer navbar-fixed-bottom">
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        <h6>Coded with <i class="fa fa-heart red"></i> by the Dev Team at <a href="https://www.facebook.com/yayoofficialpage"></a>Y@y0</h6>
+      </div>
+    </div>
+  </footer>
 </html>
