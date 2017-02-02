@@ -6,5 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Category.create([{name: "Cars"}, {name: "Electronics"}, {name: "Fashion"}])
+Category.create([{name: "Housing"}, {name: "Furniture"}, {name: "Miscellaneous"}])
 Admin.create({name: 'Abass Sesay', email: 'bassco10@beljom.com', password: '10041992', password_confirmation: '10041992'})
 Seller.create({name: 'Abass Sesay', email: 'bassco10@beljom.com', password: '10041992', password_confirmation: '10041992', phone_number: '2677219136', whatsapp: true, activated: true})
