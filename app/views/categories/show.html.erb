@@ -40,7 +40,7 @@
   <% @products.each do |product| %>
     <div class="col-sm-4 col-md-3">
       <div class="entry card wrapper", onclick='location.href="<%= product_path(product) %>"'>
-        <%= image_tag product.product_images.first.url(:thumb) || 'no_image_found', class: 'icon card-img-top d-img' %>
+        <%= image_tag product.product_images.try(:first).try(:url, :thumb) || 'no_image_found', class: 'icon card-img-top d-img' %>
         <div class="content card-block">
           <table>
             <tr>

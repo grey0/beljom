@@ -22,36 +22,46 @@
 <div class="container">
   <h2><%=  "#{@product.name} (#{@product.cond})" %></h2>
 </div>
-<div class="demo">
-  <div class="item">
-    <div class="clearfix">
-      <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-        <%	 @product.product_images.each do |image| %>
-        <li data-thumb="<%= image.url(:gallery_thumb) %>">
-          <%= image_tag image.url(:gallery_display) %>
-        </li>
-        <% end %>
-      </ul>
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <!--<a class="a2a_button_twitter"></a>-->
+  <a class="a2a_button_whatsapp" href='whatsapp://send?text=<%= product_url(@product)%>'></a>
+  <!--<a class="a2a_button_facebook"></a>-->
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+<div class="col-md-6" >
+  <div class="demo">
+    <div class="item">
+      <div class="clearfix">
+        <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+          <%	 @product.product_images.each do |image| %>
+              <li data-thumb="<%= image.url(:gallery_thumb) %>">
+                <%= image_tag image.url(:gallery_display) %>
+              </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-<div class="container des-entry">
-  <table>
-    <tr>
-      <td><b><em>Price:</em></b></td>
-      <td><%=  number_to_currency(@product.price, unit: @product.unit, separator: ".", delimiter: "") %></td>
-    </tr>
-    <tr>
-      <td><b><em>Description:</em></b></td>
-      <td><%=  @product.description %></td>
-    </tr>
-    <tr>
-      <td><b><em>Sold by:</em></b></td>
-      <td><%=  @seller.name %></td>
-    </tr>
-    <tr>
-      <td><b><em>Contact:</em></b></td>
-      <td><%=  @seller.phone_number %></td>
-    </tr>
-  </table>
+  <div class="container des-entry">
+    <table cellpadding="10">
+      <tr>
+        <td><b><em>Price:  </em></b></td>
+        <td><%=  number_to_currency(@product.price, unit: @product.unit, separator: ".", delimiter: "") %></td>
+      </tr>
+      <tr>
+        <td><b><em>Description:  </em></b></td>
+        <td><%=  @product.description %></td>
+      </tr>
+      <tr>
+        <td><b><em>Sold by:  </em></b></td>
+        <td><%=  @seller.name %></td>
+      </tr>
+      <tr>
+        <td><b><em>Contact:  </em></b></td>
+        <td><%=  @seller.phone_number %></td>
+      </tr>
+    </table>
+  </div>
 </div>
