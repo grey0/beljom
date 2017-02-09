@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170114022627) do
+ActiveRecord::Schema.define(version: 20170209192439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,12 +37,14 @@ ActiveRecord::Schema.define(version: 20170114022627) do
     t.integer  "seller_id"
     t.boolean  "approved",       default: false
     t.integer  "approved_by"
-    t.datetime "created_at",                     null: false
-    t.datetime "updated_at",                     null: false
-    t.string   "product_images", default: [],                 array: true
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "product_images", default: [],                  array: true
     t.integer  "price"
     t.integer  "currency",       default: 0
     t.integer  "condition"
+    t.string   "seller_name",    default: "null"
+    t.string   "contact",        default: "null"
   end
 
   create_table "sellers", force: :cascade do |t|
@@ -51,14 +53,15 @@ ActiveRecord::Schema.define(version: 20170114022627) do
     t.string   "phone_number"
     t.boolean  "whatsapp"
     t.string   "password_digest"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
     t.string   "remember_digest"
     t.string   "activation_digest"
     t.boolean  "activated"
     t.datetime "activated_at"
     t.string   "reset_digest"
     t.datetime "reset_sent_at"
+    t.boolean  "admin",             default: false
   end
 
 end

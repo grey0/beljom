@@ -34,6 +34,7 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new()
+    @seller = Seller.find(session[:seller_id])
     # @categories_arry = Category.all.map{|e| [e.name, e.id]}
   end
 

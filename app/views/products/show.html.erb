@@ -59,11 +59,11 @@
       </tr>
       <tr>
         <td><b><em>Sold by:  </em></b></td>
-        <td><%=  @seller.name %></td>
+        <td><%=  @product.seller_name.eql?('null') ? @seller.name : @product.seller_name.eql %></td>
       </tr>
       <tr>
         <td><b><em>Contact:  </em></b></td>
-        <td><%=  @seller.phone_number %></td>
+        <td><%=  @product.contact.eql?('null') ? @seller.phone_number : @product.contact.eql %></td>
       </tr>
     </table>
   </div>
