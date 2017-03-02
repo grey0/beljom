@@ -55,6 +55,7 @@ class ProductsController < ApplicationController
   def edit
     @admin = params[:admin]
     @product = Product.find_by(id: params[:id])
+    @seller = Seller.find(session[:seller_id])
   end
 
   def approve
